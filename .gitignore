@@ -4,3 +4,5 @@
 *.idea
 *.cache
 *.DS_Store
+venv
+
