@@ -19,7 +19,7 @@ Top100Movies is a Flask-based web application that allows users to search for mo
 ## Setup Instructions
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/Top100Movies.git
+    git clone https://github.com/azeemsher788/Top100Movies.git
     cd Top100Movies
     ```
 
