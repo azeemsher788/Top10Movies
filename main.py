@@ -10,7 +10,8 @@ import requests
 import os, dotenv
 
 dotenv.load_dotenv()
-# API_KEY = '00a81762e4745894ec02b3e1a2265d29'
+
+# Please Add your values in .env file
 API_TOKEN = os.getenv("MOVIE_DB_TOKEN")
 MOVIE_DB_SEARCH_URL = os.getenv("MOVIE_DB_SEARCH_URL")
 MOVIE_DB_INFO_URL = os.getenv("MOVIE_DB_INFO_URL")
