@@ -1,0 +1,6 @@
+*.log
+*.pyc
+*.vscode
+*.idea
+*.cache
+*.DS_Store
