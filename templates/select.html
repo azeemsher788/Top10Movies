@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Select Movie{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="heading">Select Movie</h1>
+    {% if searched_movies == [] %}
+        <h4>No movie found!</h4>
+            <a href="{{ url_for('search') }}">Search again</a>
+    {% endif %}
+    {% for index, api_movie in enumerate(searched_movies) %}
+        {% if api_movie.release_date != "" %}
+  <p>
+      {{ index + 1 }}.
+    <a href="{{ url_for('add', id=api_movie.id) }}"> {{ api_movie.title }}</a> - {{ api_movie.release_date.split("-")[0] }}
+  </p>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit movies{% endblock %}
+
+{% block content %}
+<div class="content">
+  <h1 class="heading">{{ movie.title }}</h1>
+    <p class="description">Edit movie Rating</p>
+             {% from 'bootstrap5/form.html' import render_form %}
+    <form action="{{ url_for('edit', movie_id=movie.id) }}" method="POST" novalidate>
+            {{ render_form(form) }}
+        </form>
+  </div>
+{% endblock %}
