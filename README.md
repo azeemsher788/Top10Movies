@@ -1,4 +1,4 @@
-# Top100Movies
+# Top10Movies
 
 ## Overview
 Top100Movies is a Flask-based web application that allows users to search for movies, add them to a personal list, and rate and review them. The application fetches movie data from an external API and stores user ratings and reviews in a local database.
