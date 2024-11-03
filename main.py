@@ -60,8 +60,8 @@ class AddingForm(FlaskForm):
 def home():
     movies = db.session.execute(db.select(Movies).order_by(Movies.rating))
     all_movies = movies.scalars().all()
-    for i in range(len(all_movies)):
-        all_movies[i].ranking = len(all_movies) - i
+    for i, movie in enumerate(reversed(all_movies), start=1):
+        movie.ranking = i
     db.session.commit()
     return render_template("index.html", all_movies=all_movies)
 
